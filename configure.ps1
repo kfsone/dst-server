@@ -250,7 +250,7 @@ dedicated_lan_server = true
     # And finally, the caves file
     $IniFile = Join-Path $ClusterPath $Caves $ServerIniFile
     $CavesServerPort = $ServerPort + 1
-    $CavesMasterPot  = $MasterPort + 1
+    $CavesMasterPort = $MasterPort + 1
     $CavesAuthPort   = $AuthPort + 1
     if ($pscmdlet.ShouldProcess($IniFile, "Create")) {
         Out-File -FilePath $IniFile -Encoding utf8 -InputObject @"
